@@ -1,0 +1,25 @@
+<div ng-init="init()" class="container">
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>Tasks</h1>
+		<hr>
+	</div>
+</div>
+
+<div ng-repeat="task in taskList" class="row">
+   <div class="col-md-12">
+   		<div>
+   			
+   			<h3 style="text-transform: uppercase;">{{task.process}}</h3>
+   			<h4>{{task.name}}</h4>
+   			<p>{{task.description}}</p>
+   			<div>
+   				<a ng-href="#{{task.form}}?userId={{userId}}">{{task.reference}}</a>
+   			</div>
+   			<hr>
+   		</div>
+   </div>    
+</div>
+
+</div>

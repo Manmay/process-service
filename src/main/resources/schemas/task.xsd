@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://schema.zenerick.com/process"
+        xmlns:tns="http://schema.zenerick.com/process"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        jaxb:version="2.1"
+        elementFormDefault="qualified">
+
+        <element name="TaskQueryMultiple">
+                <complexType>
+                        <sequence>
+                                <element name="id" type="string"/>
+                                <element name="name" type="string"/>
+                                <element name="description" type="string"/>
+                                <element name="process" type="string"/>
+                                <element name="reference" type="string" />
+                                <element name="assignee" type="string"/>
+                                <element name="form" type="anyURI"/>
+                        </sequence>
+                </complexType>
+        </element>
+
+        <element name="TaskQuerySingle">
+                <complexType>
+                        <sequence>
+                                <element name="id" type="string"/>
+                                <element name="name" type="string"/>
+                                <element name="description" type="string"/>
+                                <element name="process" type="string"/>
+                                <element name="reference" type="string" />
+                                <element name="assignee" type="string"/>
+                                <element name="data" type="anyType"/>
+                        </sequence>
+                </complexType>
+        </element>
+
+
+</schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://schema.reverside.co.za/process"
+        xmlns:tns="http://schema.reverside.co.za/process"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        jaxb:version="2.1"
+        elementFormDefault="qualified">
+
+    <include schemaLocation="process-registration.xsd"/>
+
+</schema>

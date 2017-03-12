@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://schema.zenerick.com/process"
+	xmlns:tns="http://schema.zenerick.com/process"
+	elementFormDefault="qualified">
+	
+	<include schemaLocation="identity.xsd"/>
+	<include schemaLocation="task.xsd"/>
+	
+</schema>

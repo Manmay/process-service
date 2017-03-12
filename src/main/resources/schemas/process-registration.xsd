@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://schema.reverside.co.za/process"
+	xmlns:tns="http://schema.reverside.co.za/process"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	jaxb:version="2.1"
+    elementFormDefault="qualified">
+
+	<element name="registrationData">
+		<complexType>
+			<sequence>
+				<element name="firstName" type="string"/>
+				<element name="lastName"  type="string"/>
+				<element name="email"     type="string"/>
+				<element name="password"  type="string"/>
+				<element name="decision"  type="string"/>
+				<element name="otp"       type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="registrationStart">
+		<complexType>
+			<sequence>
+				<element name="firstName" type="string"/>
+				<element name="lastName"  type="string"/>
+				<element name="email"     type="string"/>
+				<element name="password"  type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+    <element name="registrationReviewQuery">
+		<complexType>
+			<sequence>
+				<element name="firstName" type="string"/>
+				<element name="lastName"  type="string"/>
+				<element name="email"     type="string"/>
+				<element name="decision"  type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="registrationReviewCommand">
+		<complexType>
+			<sequence>
+				<element name="decision"  type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="registrationVerifyQuery">
+		<complexType>
+			<sequence>
+				<element name="email" type="string"/>
+				<element name="otp"   type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="registrationVerifyCommand">
+		<complexType>
+			<sequence>
+				<element name="otp"   type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>
